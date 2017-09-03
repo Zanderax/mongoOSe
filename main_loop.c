@@ -3,6 +3,7 @@
 
 int main_loop()
 {
+	serial_write('S');
 	int i;
 	for( i = 0; i < 100; ++i)
 	{
@@ -10,5 +11,6 @@ int main_loop()
 		unsigned long t;
 		for( t = 0; t < 8000000; ++t);
 	}
+	
 	return 0;
 }
